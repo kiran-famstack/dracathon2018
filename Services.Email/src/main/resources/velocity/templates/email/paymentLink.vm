@@ -1,0 +1,34 @@
+#parse("/velocity/templates/email/fragments/header.vm")
+ <tr>
+<td style="border-bottom:1px solid #e7e7e7;">
+          <center>
+            <table cellpadding="0" cellspacing="0" width="600" class="w320">
+            	<tr>
+                      <td style="padding-top:8px;padding-bottom:10px">
+                        <h4>Hi $!firstName,</h4>
+                      </td>
+                </tr>
+                <tr>
+                      <td style="padding-top:8px;padding-bottom:10px">
+                       </br>  $!orderOwnerName is requesting you to pay for the order he has placed in e-shoppy! Please click on the below link to pay the same.
+                      </td>
+                </tr>
+                <tr>
+                      <td style="padding-top:8px;padding-bottom:10px">
+                         </br> <a href="http://localhost:8080/gc/store/payment?paymentToken=$!paymentToken" style="background-color:#D84A38;border-radius:0px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:33px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;">Payment Link</a>
+                      </td>
+                </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#f8f8f8;border-bottom:1px solid #e7e7e7;" valign="top">
+          <center>
+			This is an automated notification please do not reply.
+			</center>
+        </td>
+      </tr>
+#parse("/velocity/templates/email/fragments/footer.vm")
+
+

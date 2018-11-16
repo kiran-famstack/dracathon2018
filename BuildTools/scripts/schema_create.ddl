@@ -1,0 +1,4 @@
+CREATE SCHEMA `gc` ;
+CREATE USER 'gc'@'localhost' IDENTIFIED BY 'gc1234';
+GRANT ALL PRIVILEGES ON * . * TO 'gc'@'localhost';
+FLUSH PRIVILEGES;

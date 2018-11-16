@@ -1,0 +1,1 @@
+Payment Link :  http://localhost:8080/gc/store/payment?paymentToken=$!paymentToken
