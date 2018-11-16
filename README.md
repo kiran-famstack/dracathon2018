@@ -1,4 +1,4 @@
-# Famstack
+# DRACATHON 2018
 ##How to setup workspace :
 1. Install and configure Eclipse 4.x
 2. Install and configure JDK 1.8
